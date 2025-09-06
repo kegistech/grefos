@@ -1,4 +1,7 @@
 /* Start custom CSS */
+body {
+    font-size: 1.1rem;
+}
 a {
     text-decoration: none;
 }
@@ -42,6 +45,40 @@ h1 {
 }
 .btn-primary:focus  {
     box-shadow:0 0 0 .25rem rgb(83 198 161);
+}
+.rounded-top-left {
+    border-top-left-radius: 50px;
+}
+.rounded-top-right {
+    border-top-right-radius: 50px;
+}
+.rounded-bottom-left {
+    border-bottom-left-radius: 50px;
+}
+.rounded-bottom-right {
+    border-bottom-right-radius: 50px;
+}
+/* .img-fluid {
+    width: 100%;
+    height: auto;
+} */
+.page-hero {
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+.page-hero img {
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+        min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 header {
     position: fixed;
@@ -166,6 +203,7 @@ ul#mainmenu li a{
     font-weight: 500;
     position: relative;
     border: 2px solid transparent;
+    font-size: 1rem;
 }
 ul#mainmenu li a:before{
     background-image: url(../img/menu-leaf.svg);
@@ -1173,6 +1211,31 @@ Animations
 
 /*** Footer End ***/
 
+
+/*** About Start ***/
+.list-div::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 16px;
+    background: url(../img/leaf-green.svg) no-repeat 0 0;
+    left: -24px;
+    top: 5px;
+}
+.team {
+    transition: 0.5s;
+    box-shadow: 0 5px 0 0px rgba(56, 177, 138, 0.2);
+    margin: 15px 0;
+}
+.team:hover {
+    box-shadow: 0 5px 0 0px rgba(56, 177, 138, 1);
+    margin-top: -10px;;
+}
+.team:hover img {
+    scale: 1;
+}
+/*** About End ***/
+
 /*
 Responsive
 */
@@ -1268,6 +1331,12 @@ Responsive
         background-position: 0;
     }
 }
+@media screen and (max-width: 575px) { 
+    .page-hero {
+        height: 400px;
+    }
+}
+
 @media (min-width: 1400px) {
     .container, 
     .container-lg, 
