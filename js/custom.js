@@ -25,6 +25,10 @@ $('#productSlider').owlCarousel({
 });
 /* /END CAROUSEL */
 
+$('#textSlider').eocjsNewsticker({
+  speed: 15
+});
+
 jQuery('#logoSlier').owlCarousel({
             center: true,
             items:5,
@@ -50,30 +54,7 @@ jQuery('#logoSlier').owlCarousel({
             }
         });
 
-        jQuery('#textSlider').owlCarousel({
-            center: true,
-            items:1,
-            loop:true,
-            margin:50,
-            nav:false,
-            dots:false,
-            autoplay: true,
-            slideTransition: 'linear',
-            autoplayTimeout: 5000,
-            autoplaySpeed: 5000,
-            autoplayHoverPause: false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        });
+        
  });       
 
 /* START MENU */
