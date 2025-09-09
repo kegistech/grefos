@@ -37,13 +37,13 @@
                         </div> -->
                         <div class="menu-main-menu-container">
                             <ul id="mainmenu" class="menu">
-                                <li id="menu-item-1" class="menu-item menu-item-1"><a href="#">Produce</a></li>
+                                <li id="menu-item-1" class="menu-item menu-item-1"><a href="#">Product</a></li>
                                 <li class="menu-item"><a href="about.html">About Us</a></li>
                                 <li class="menu-item menu-item-logo-center">
                                     <a href="index.html"><img class="slogan" src="img/logo.svg" alt="Image"></a>
                                 </li>
-                                <li class="menu-item"><a href="#">Blog</a></li>
-                                <li id="menu-item" class="menu-item"><a href="#">Get In Touch</a></li>
+                                <li class="menu-item"><a href="blog.html">Blog</a></li>
+                                <li id="menu-item" class="menu-item"><a href="contact.html">Get In Touch</a></li>
                             </ul>
                         </div>
                         <div class="actions">
@@ -57,10 +57,10 @@
                     </div>
                     <div class="sub-menus">
                         <ul data-parent="1" class="sub-menu discovery submenu-item-1">
-                            <li class=""><a href="#">Potatoes</a></li>
-                            <li class=""><a href="#">Tomatoes</a></li>
-                            <li class=""><a href="#">Chillies</a></li>
-                            <li class=""><a href="#">Lemons</a></li>
+                            <li class=""><a href="product.html">Potatoes</a></li>
+                            <li class=""><a href="product-detail.html">Tomatoes</a></li>
+                            <li class=""><a href="product.html">Chillies</a></li>
+                            <li class=""><a href="product.html">Lemons</a></li>
                         </ul>
                         <ul data-parent="2" class="sub-menu products submenu-item-2">
                             <li class="inline"><sub>Gourmet Snacks &amp; Super Foods</sub><a href="#">Hunter's Gourmet</a></li>
@@ -86,7 +86,7 @@
 		<video autoplay muted loop id="myVideo">
 			<source src="img/bg.mp4" type="video/mp4">
 		</video>
-		<div class="arrow-down"><a href="#sectionScroll"><i class="fas fa-arrow-circle-down"></i></a></div>
+		<div class="arrow-down animated-element"><a href="#sectionScroll"><i class="fas fa-arrow-circle-down"></i></a></div>
 	</div>	
     <!-- START FUTURE -->
     <div class="section" id="sectionScroll">
@@ -119,82 +119,68 @@
 				<div class="large-12 columns">
 					<div id="productSlider" class="owl-carousel owl-theme">
 						<div class="item">
-							<div class="card">
+							<div class="card product-div" onclick="window.location='product-detail.html';">
 								<div class="overflow-hidden"><img src="img/product1.jpg" class="card-img-top" alt="..."></div>
 								<div class="card-body text-center">
-									<h5 class="card-title">Curabitur Sapien</h5>
-									<div class="product-text"><p class="card-text">Donec maximus libero non lectus dapibus, id consectetur mi ultrices. Aenean suscipit massa eu erat vestibulum</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
+									<h5 class="card-title"><a href="product-detail.html" class="text-dark">Donec Maximus</a></h5>
+									<span class="text-primary me-3 fw-1">₹ 350.00</span>
+									<span class="text-decoration-line-through fw-1">₹ 450.00</span>
+									<div class="view-btn border-top mt-3 pt-3 fs-6"><a href="product-detail.html" class="text-muted"><i class="far fa-eye text"></i> View Detail</a></div>
 								</div>
 							</div>
 						</div>
 						<div class="item">
-							<div class="card">
+							<div class="card product-div" onclick="window.location='product-detail.html';">
 								<div class="overflow-hidden"><img src="img/product2.jpg" class="card-img-top" alt="..."></div>
 								<div class="card-body text-center">
-									<h5 class="card-title">Donec Maximus</h5>
-									<div class="product-text"><p class="card-text">Aenean suscipit massa eu erat vestibulum, sit amet tincidunt libero fringilla. Aenean suscipit massa eu erat vestibulum</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
+									<h5 class="card-title"><a href="product-detail.html" class="text-dark">Donec Maximus</a></h5>
+									<span class="text-primary me-3 fw-1">₹ 350.00</span>
+									<span class="text-decoration-line-through fw-1">₹ 450.00</span>
+									<div class="view-btn border-top mt-3 pt-3 fs-6"><a href="product-detail.html" class="text-muted"><i class="far fa-eye text"></i> View Detail</a></div>
 								</div>
 							</div>
 						</div>
 						<div class="item">
-							<div class="card">
+							<div class="card product-div" onclick="window.location='product-detail.html';">
 								<div class="overflow-hidden"><img src="img/product3.jpg" class="card-img-top" alt="..."></div>
 								<div class="card-body text-center">
-									<h5 class="card-title">Aenean Rhoncus</h5>
-									<div class="product-text"> <p class="card-text">Donec ut lectus scelerisque, convallis mi sit amet, sollicitudin arcu. Aenean suscipit massa eu erat vestibulum</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
+									<h5 class="card-title"><a href="product-detail.html" class="text-dark">Donec Maximus</a></h5>
+									<span class="text-primary me-3 fw-1">₹ 350.00</span>
+									<span class="text-decoration-line-through fw-1">₹ 450.00</span>
+									<div class="view-btn border-top mt-3 pt-3 fs-6"><a href="product-detail.html" class="text-muted"><i class="far fa-eye text"></i> View Detail</a></div>
 								</div>
 							</div>
 						</div>
 						<div class="item">
-							<div class="card">
+							<div class="card product-div" onclick="window.location='product-detail.html';">
 								<div class="overflow-hidden"><img src="img/product4.jpg" class="card-img-top" alt="..."></div>
 								<div class="card-body text-center">
-									<h5 class="card-title">Pellentesque</h5>
-									<div class="product-text"> <p class="card-text">Etiam in metus dapibus, dictum tortor sit amet, volutpat nunc.</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
+									<h5 class="card-title"><a href="product-detail.html" class="text-dark">Donec Maximus</a></h5>
+									<span class="text-primary me-3 fw-1">₹ 350.00</span>
+									<span class="text-decoration-line-through fw-1">₹ 450.00</span>
+									<div class="view-btn border-top mt-3 pt-3 fs-6"><a href="product-detail.html" class="text-muted"><i class="far fa-eye text"></i> View Detail</a></div>
 								</div>
 							</div>
 						</div>
 						<div class="item">
-							<div class="card">
+							<div class="card product-div" onclick="window.location='product-detail.html';">
 								<div class="overflow-hidden"><img src="img/product1.jpg" class="card-img-top" alt="..."></div>
 								<div class="card-body text-center">
-									<h5 class="card-title">Curabitur Sapien</h5>
-									<div class="product-text"><p class="card-text">Donec maximus libero non lectus dapibus, id consectetur mi ultrices. Aenean suscipit massa eu erat vestibulum</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
+									<h5 class="card-title"><a href="product-detail.html" class="text-dark">Donec Maximus</a></h5>
+									<span class="text-primary me-3 fw-1">₹ 350.00</span>
+									<span class="text-decoration-line-through fw-1">₹ 450.00</span>
+									<div class="view-btn border-top mt-3 pt-3 fs-6"><a href="product-detail.html" class="text-muted"><i class="far fa-eye text"></i> View Detail</a></div>
 								</div>
 							</div>
 						</div>
 						<div class="item">
-							<div class="card">
+							<div class="card product-div" onclick="window.location='product-detail.html';">
 								<div class="overflow-hidden"><img src="img/product2.jpg" class="card-img-top" alt="..."></div>
 								<div class="card-body text-center">
-									<h5 class="card-title">Donec Maximus</h5>
-									<div class="product-text"><p class="card-text">Aenean suscipit massa eu erat vestibulum, sit amet tincidunt libero fringilla. Aenean suscipit massa eu erat vestibulum</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<div class="overflow-hidden"><img src="img/product3.jpg" class="card-img-top" alt="..."></div>
-								<div class="card-body text-center">
-									<h5 class="card-title">Aenean Rhoncus</h5>
-									<div class="product-text"> <p class="card-text">Donec ut lectus scelerisque, convallis mi sit amet, sollicitudin arcu. Aenean suscipit massa eu erat vestibulum</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<div class="overflow-hidden"><img src="img/product4.jpg" class="card-img-top" alt="..."></div>
-								<div class="card-body text-center">
-									<h5 class="card-title">Pellentesque</h5>
-									<div class="product-text"> <p class="card-text">Etiam in metus dapibus, dictum tortor sit amet, volutpat nunc.</p></div>
-									<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Show More</a>
+									<h5 class="card-title"><a href="product-detail.html" class="text-dark">Donec Maximus</a></h5>
+									<span class="text-primary me-3 fw-1">₹ 350.00</span>
+									<span class="text-decoration-line-through fw-1">₹ 450.00</span>
+									<div class="view-btn border-top mt-3 pt-3 fs-6"><a href="product-detail.html" class="text-muted"><i class="far fa-eye text"></i> View Detail</a></div>
 								</div>
 							</div>
 						</div>
@@ -211,7 +197,7 @@
 			<div class="row">
 				<div class="section-title text-center mb-5">
 					<h1 class="mb-4 text-white">Discover the Reasons <br/> Behind Our Excellence.</h1>
-					<a href="#" class="btn btn-primary py-2 px-4 rounded-4">Check It Out</a>
+					<a href="#" class="btn btn-primary py-2 px-4">Check It Out</a>
 				</div>	
 			</div>
 		</div>
@@ -497,6 +483,10 @@
 			</div>
 		</footer>	
 	<!-- /END FOOTER -->	
+	 <div id="main-loader">
+		<div class="loading_indicator"> </div>
+		<div class="loader"> </div>
+	</div>	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
