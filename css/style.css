@@ -5,6 +5,9 @@ body {
 a {
     text-decoration: none;
 }
+::selection {
+  background-color: rgba(57,177,138, 0.5);
+}
 hr:not([size]) {
     height: 0.5px;
 }
@@ -20,6 +23,19 @@ h1,.h1 {
 h1 {
     color: #38b18a;
 }
+.form-control {
+    min-height: 50px;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #38b18a;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(57, 177, 138, .25);
+}
+.fw-1 {
+    font-weight: 500;
+}
 .btn {
     transition: 0.5s;
     transition: top 0.5s ease;
@@ -27,7 +43,7 @@ h1 {
     top: 0;
 }
 .card {
-        border-radius: 1rem;
+        border-radius: 0.5rem;
     overflow: hidden;
 }
 .card:hover .btn {
@@ -117,11 +133,33 @@ header .row {
     position: absolute;
     left: 48vw;
     bottom: 30px;
-    font-size: 30px;
-    
+    font-size: 35px;
 }
 .arrow-down a {
     color: #ffffff;
+}
+.arrow-down a i {
+    background: #38b18a;
+    border-radius: 100px;
+}
+
+
+@keyframes upDownAnimation {
+  0% {
+    transform: translateY(0); /* Starting position (no vertical movement) */
+  }
+  50% {
+    transform: translateY(10px); /* Move up by 20 pixels */
+  }
+  100% {
+    transform: translateY(0); /* Return to starting position */
+  }
+}
+.animated-element {
+  animation-name: upDownAnimation; /* Link to the defined keyframes */
+  animation-duration: 1.3s; /* How long one cycle of the animation takes */
+  animation-timing-function: ease-in-out; /* Controls the acceleration/deceleration */
+  animation-iteration-count: infinite; /* Makes the animation loop continuously */
 }
 .main-header-wraper{
     padding:10px;
@@ -192,7 +230,7 @@ ul#mainmenu {
 }
 ul#mainmenu li{
     display: inline-block;
-    padding: 10px 8px;
+    padding: 12px 8px 8px;
 }
 ul#mainmenu li a{
     color: #fff;
@@ -472,9 +510,9 @@ Animations
     height: 78px;
     margin-bottom: 20px;
 }
-.rounded-3 {
+/* .rounded-3 {
     border-radius: 1rem !important;
-}
+} */
 .rounded-4 {
     border-radius: 5rem !important;
 }
@@ -518,7 +556,7 @@ Animations
     transition: 0.5s;
 }
 .card:hover img {
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.5s;
 }
 .work-process {
@@ -1165,6 +1203,46 @@ Animations
 }
 /* /End Testimonials */
 
+#main-loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9999;
+}
+.loading_indicator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../img/loader.png) no-repeat center center;
+    background-size: contain;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+.loader {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+   position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    margin-top: 70px;
+    margin-left: 0;
+  animation: l5 1s infinite linear alternate;
+}
+@keyframes l5 {
+    0%  {box-shadow: 20px 0 #38b18a, -20px 0 #0002;background: #38b18a }
+    33% {box-shadow: 20px 0 #38b18a, -20px 0 #0002;background: #0002}
+    66% {box-shadow: 20px 0 #0002,-20px 0 #38b18a; background: #0002}
+    100%{box-shadow: 20px 0 #0002,-20px 0 #38b18a; background: #38b18a }
+}
 /*** Footer Start ***/
 .footer {
     background: #38b18a;
@@ -1175,7 +1253,9 @@ Animations
     color: var(--bs-gray-dark);
     transition: 0.5s;
 }
-
+.footer .footer-item a:hover {
+    letter-spacing: 1px;
+}
 .footer .footer-item p {
     line-height: 30px;
 }
@@ -1229,13 +1309,57 @@ Animations
 }
 .team:hover {
     box-shadow: 0 5px 0 0px rgba(56, 177, 138, 1);
-    margin-top: -10px;;
+    margin-top: 8px;
 }
 .team:hover img {
     scale: 1;
 }
 /*** About End ***/
 
+/*** Product Start ***/
+.product-div {
+    margin-bottom: 30px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.product-img-div .img-fluid {
+    height: 100% !important;
+    width: 100% !important;
+}
+.product-div .view-btn  {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.product-div:hover .view-btn a {
+    color:#171616 !important;
+}
+.product-div:hover a,
+.product-div a:hover {
+    color: #38b18a !important;
+    transition: 0.5s;
+} 
+
+/*** Product End ***/
+
+.product-detail {
+    padding-top: 150px;
+    border: 0;
+    position: relative;
+}
+
+.card-blog-text {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+  height: 80px;
+}
 /*
 Responsive
 */
