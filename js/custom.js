@@ -112,8 +112,21 @@ function humberger_menu_click($){
 }
 /* /END MENU */
 
-
-
+/* START LOADER JS */
+ document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("body").style.overflow = "hidden";
+    document.getElementById("main-loader").style.visibility = "visible";
+    } else {
+    setTimeout(() => {
+        document.getElementById("main-loader").style.display ="none";
+        document.querySelector("body").style.overflow = "visible"; 	
+        document.querySelector("body").style.visibility = "visible";
+    }, 1000)
+    }
+};
+/* /END LOADER JS */
 /* START TESTIMONIALS */
 
 // vars
